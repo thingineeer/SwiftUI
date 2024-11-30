@@ -6,12 +6,7 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		71A7D2672CFAF58B0092DBCA /* LandMark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A7D2662CFAF58B0092DBCA /* LandMark.swift */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXFileReference section */
-		71A7D2662CFAF58B0092DBCA /* LandMark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandMark.swift; sourceTree = "<group>"; };
 		71D0C7DF2CE22A3400EAE9A3 /* SwiftUITutorials.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUITutorials.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -37,7 +32,6 @@
 		71D0C7D62CE22A3400EAE9A3 = {
 			isa = PBXGroup;
 			children = (
-				71A7D2662CFAF58B0092DBCA /* LandMark.swift */,
 				71D0C7E12CE22A3400EAE9A3 /* SwiftUITutorials */,
 				71D0C7E02CE22A3400EAE9A3 /* Products */,
 			);
@@ -125,7 +119,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				71A7D2672CFAF58B0092DBCA /* LandMark.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
