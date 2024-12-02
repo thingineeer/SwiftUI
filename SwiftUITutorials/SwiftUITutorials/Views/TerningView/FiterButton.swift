@@ -13,11 +13,11 @@ struct FiterButton: View {
             Image(.icFilter)
             
             Text("필터링")
-                .font(.button3)
+                .font(.caption2)
                 .foregroundStyle(.terningMain)
             
         }.padding(EdgeInsets(top: 1, leading: 2, bottom: 1, trailing: 9))
-            .frame(width: 80.adjusted, height: 30.adjustedH)
+            .frame(width: 80, height: 30)
             .cornerRadius(5)
             .overlay(
             RoundedRectangle(cornerRadius: 5)
