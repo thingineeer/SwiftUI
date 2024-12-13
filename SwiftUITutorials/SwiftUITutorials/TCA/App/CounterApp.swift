@@ -10,7 +10,7 @@ import SwiftUI
 
 
 @main
-struct MyApp: App {
+struct CounterApp: App {
   static let store = Store(initialState: CounterFeature.State()) {
     CounterFeature()
       ._printChanges()
@@ -18,7 +18,7 @@ struct MyApp: App {
   
   var body: some Scene {
     WindowGroup {
-      CounterView(store: MyApp.store)
+      CounterView(store: CounterApp.store)
     }
   }
 }

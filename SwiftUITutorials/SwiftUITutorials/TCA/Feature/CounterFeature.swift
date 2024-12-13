@@ -11,10 +11,9 @@ import Foundation
 @Reducer
 struct CounterFeature {
     
-    @ObservableState
-    
     // 기능이 작업을 수행하는 데 필요한 상태를 저장하는 State
-    struct State {
+    @ObservableState
+    struct State: Equatable {
         var count = 0
         var isLoading = false
         var fact: String?
@@ -32,6 +31,10 @@ struct CounterFeature {
     }
     
     enum CancelID { case timer }
+    
+    
+    @Dependency(\.continuousClock) var clock
+    @Dependency(\.numberFact) var numberFact
     
     
     var body: some ReducerOf<Self> {
@@ -54,9 +57,7 @@ struct CounterFeature {
                 state.isLoading = true
                 
                 return .run { [count = state.count] send in
-                    let (data, _) = try await URLSession.shared.data(from: URL(string: "http://numbersapi.com/\(count)")!)
-                    let fact = String(decoding: data, as: UTF8.self)
-                    await send(.factResponse(fact))
+                    try await send(.factResponse(self.numberFact.fetch(count)))
                 }
             case .timerTick:
                 state.count += 1
@@ -67,8 +68,7 @@ struct CounterFeature {
                 state.isTimerRunning.toggle()
                 if state.isTimerRunning {
                     return .run { send in
-                        while true {
-                            try await Task.sleep(for: .seconds(1))
+                        for await _ in self.clock.timer(interval: .seconds(1)) {
                             await send(.timerTick)
                         }
                     }

@@ -10,8 +10,19 @@
 		71DD80FF2D0C42E600AE2E6E /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 71DD80FE2D0C42E600AE2E6E /* ComposableArchitecture */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		71DD81712D0C78F500AE2E6E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 71D0C7D72CE22A3400EAE9A3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 71D0C7DE2CE22A3400EAE9A3;
+			remoteInfo = SwiftUITutorials;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		71D0C7DF2CE22A3400EAE9A3 /* SwiftUITutorials.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUITutorials.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		71DD816D2D0C78F500AE2E6E /* SwiftUITutorialsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUITutorialsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -33,6 +44,11 @@
 			path = SwiftUITutorials;
 			sourceTree = "<group>";
 		};
+		71DD816E2D0C78F500AE2E6E /* SwiftUITutorialsTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = SwiftUITutorialsTests;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +60,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		71DD816A2D0C78F500AE2E6E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -51,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				71D0C7E12CE22A3400EAE9A3 /* SwiftUITutorials */,
+				71DD816E2D0C78F500AE2E6E /* SwiftUITutorialsTests */,
 				71D0C7E02CE22A3400EAE9A3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -59,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				71D0C7DF2CE22A3400EAE9A3 /* SwiftUITutorials.app */,
+				71DD816D2D0C78F500AE2E6E /* SwiftUITutorialsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -89,6 +114,29 @@
 			productReference = 71D0C7DF2CE22A3400EAE9A3 /* SwiftUITutorials.app */;
 			productType = "com.apple.product-type.application";
 		};
+		71DD816C2D0C78F500AE2E6E /* SwiftUITutorialsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 71DD81732D0C78F500AE2E6E /* Build configuration list for PBXNativeTarget "SwiftUITutorialsTests" */;
+			buildPhases = (
+				71DD81692D0C78F500AE2E6E /* Sources */,
+				71DD816A2D0C78F500AE2E6E /* Frameworks */,
+				71DD816B2D0C78F500AE2E6E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				71DD81722D0C78F500AE2E6E /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				71DD816E2D0C78F500AE2E6E /* SwiftUITutorialsTests */,
+			);
+			name = SwiftUITutorialsTests;
+			packageProductDependencies = (
+			);
+			productName = SwiftUITutorialsTests;
+			productReference = 71DD816D2D0C78F500AE2E6E /* SwiftUITutorialsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -96,11 +144,15 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1610;
+				LastSwiftUpdateCheck = 1620;
 				LastUpgradeCheck = 1610;
 				TargetAttributes = {
 					71D0C7DE2CE22A3400EAE9A3 = {
 						CreatedOnToolsVersion = 16.1;
+					};
+					71DD816C2D0C78F500AE2E6E = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 71D0C7DE2CE22A3400EAE9A3;
 					};
 				};
 			};
@@ -122,12 +174,20 @@
 			projectRoot = "";
 			targets = (
 				71D0C7DE2CE22A3400EAE9A3 /* SwiftUITutorials */,
+				71DD816C2D0C78F500AE2E6E /* SwiftUITutorialsTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		71D0C7DD2CE22A3400EAE9A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71DD816B2D0C78F500AE2E6E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -144,7 +204,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		71DD81692D0C78F500AE2E6E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		71DD81722D0C78F500AE2E6E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 71D0C7DE2CE22A3400EAE9A3 /* SwiftUITutorials */;
+			targetProxy = 71DD81712D0C78F500AE2E6E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		71D0C7EB2CE22A3500EAE9A3 /* Debug */ = {
@@ -282,6 +357,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -311,6 +387,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -321,6 +398,44 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		71DD81742D0C78F500AE2E6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8Q4H7X3Q58;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = th1ngjin.SwiftUITutorialsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftUITutorials.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SwiftUITutorials";
+			};
+			name = Debug;
+		};
+		71DD81752D0C78F500AE2E6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8Q4H7X3Q58;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = th1ngjin.SwiftUITutorialsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftUITutorials.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SwiftUITutorials";
 			};
 			name = Release;
 		};
@@ -341,6 +456,15 @@
 			buildConfigurations = (
 				71D0C7EE2CE22A3500EAE9A3 /* Debug */,
 				71D0C7EF2CE22A3500EAE9A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		71DD81732D0C78F500AE2E6E /* Build configuration list for PBXNativeTarget "SwiftUITutorialsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71DD81742D0C78F500AE2E6E /* Debug */,
+				71DD81752D0C78F500AE2E6E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
